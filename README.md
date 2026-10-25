@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Routing & L2 Attack Lab
+ORouteX is a routing-protocol security testing suite for Linux. It bundles modules for CDP, HSRP, IGRP, OSPF and RIP manipulation, ARP spoofing and network scanning, intended for authorised testing. It runs in a safe dry-run mode by default and requires explicit confirmation before transmitting live packets.
 
 ---
 
 ## ✨ Features
 
-- Routing-protocol and layer-2 attack lab (CDP/HSRP/OSPF/RIP/ARP) for authorized testing; safe dry-run by default
+- Routing-protocol modules for CDP, HSRP, IGRP, OSPF and RIP
+- ARP cache poisoning / MITM module
+- ICMP host discovery with threaded TCP port scanning
+- Session logging for recording and replaying scans
+- Direct module launch from the command line
+- Safe dry-run mode by default with an explicit live-transmission authorization flag
 
 ---
 
@@ -39,6 +44,9 @@ Routing & L2 Attack Lab
 
 ```bash
 ./ORouteX
+./ORouteX --module 7
+./ORouteX --module 4 --i-am-authorized
+./ORouteX --help
 ```
 
 ---
